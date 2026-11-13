@@ -12,8 +12,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from bertopic import BERTopic
 
 # --- Configuration & Paths ---
-INPUT_CSV = "/lstr/sahara/datalab-ml/ibrahim/limagents_update/med_limagnets/data/pubmed_post_processed/rag_corpus.csv"
-OUTPUT_DIR = Path("/lstr/sahara/datalab-ml/ibrahim/limagents_update/med_limagnets/data/pubmed_post_processed/for_agents_role")
+INPUT_CSV = "/lstr/sahara/datalab-ml/limagents_update/med_limagnets/data/pubmed_post_processed/rag_corpus.csv"
+OUTPUT_DIR = Path("/lstr/sahara/datalab-ml/limagents_update/med_limagnets/data/pubmed_post_processed/for_agents_role")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 FINAL_CSV_PATH = OUTPUT_DIR / "rag_corpus_topics_500.csv"
