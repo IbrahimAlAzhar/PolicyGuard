@@ -40,9 +40,9 @@ def parse_args():
     ap.add_argument("--gt_source", default="consensus")
     ap.add_argument("--data_csv", default=os.path.join(ROOT, "data/pubmed_oa_regex_lim_10000.csv"))
     ap.add_argument("--web_dirs", default=f"{BASE}/med_limagents_web,{BASE}/med_equity")
-    ap.add_argument("--model_dirs", default="qwen=/lstr/sahara/datalab-ml/ibrahim/models/qwen3_8b,"
-                                            "gemma=/lstr/sahara/datalab-ml/ibrahim/models/gemma3_27b_it,"
-                                            "mistral=/lstr/sahara/datalab-ml/ibrahim/models/mistral_small_3_1_24b_instruct")
+    ap.add_argument("--model_dirs", default="qwen=/lstr/sahara/datalab-ml/models/qwen3_8b,"
+                                            "gemma=/lstr/sahara/datalab-ml/models/gemma3_27b_it,"
+                                            "mistral=/lstr/sahara/datalab-ml/models/mistral_small_3_1_24b_instruct")
     ap.add_argument("--trace_model", default="gemma", help="model whose agents_rag_ph output is traced in Table trace")
     ap.add_argument("--probe_openai", type=int, default=0)
     ap.add_argument("--distinct_papers", type=int, default=1, help="take the two trace examples from different papers")
