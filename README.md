@@ -1,4 +1,3 @@
-# med_limagents v3
 
 Limitations with societal impact, scored against **author-stated limitations only**. There are no pseudo labels.
 
