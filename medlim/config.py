@@ -5,11 +5,11 @@ environment variable, so nothing has to be edited when the project moves.
 import os
 
 PROJECT_DIR = os.environ.get(
-    "MEDLIM_PROJECT_DIR", "/lstr/sahara/datalab-ml/ibrahim/limagents_update/medlimagents/med_limagents_v2")
+    "MEDLIM_PROJECT_DIR", "/lstr/sahara/datalab-ml/limagents_update/medlimagents/med_limagents_v2")
 
 # data tree: cdc_places cdc_svi census_acs cms_hospital_compare hrsa_shortage_areas pubmed pubmed_post_processed synthea unified
 DATA_ROOT = os.environ.get(
-    "MEDLIM_DATA_ROOT", "/lstr/sahara/datalab-ml/ibrahim/limagents_update/medlimagents/med_limagents_v2/data_full/data/data_medlim")
+    "MEDLIM_DATA_ROOT", "/lstr/sahara/datalab-ml/limagents_update/medlimagents/med_limagents_v2/data_full/data/data_medlim")
 
 DEFAULT_INPUT_CSV = os.environ.get(
     "MEDLIM_INPUT_CSV", os.path.join(DATA_ROOT, "pubmed_post_processed/test_150_with_rag.csv"))
