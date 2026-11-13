@@ -24,7 +24,7 @@ BERTScore (set `MEDLIM_BERTSCORE_MODEL` to a local roberta-large folder).
 
 ## Run
 ```bash
-cd /lstr/sahara/datalab-ml/ibrahim/limagents_update/medlimagents/med_limagents_v3
+cd med_limagents_v2
 mkdir -p outputs && sed -i 's/\r$//' pbs/*.pbs pbs/*.sh *.py medlim/*.py
 source activate image_lim_vllm_final
 python medlim_v3.py --stage dry                                  # no LLM: sample + outputs/main/dry_check.txt
