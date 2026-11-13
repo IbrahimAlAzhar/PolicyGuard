@@ -60,8 +60,8 @@ while True:                       # full texts can exceed the default csv field 
     except OverflowError:
         csv_field_limit //= 10
 
-IN_DIR = "/lstr/sahara/datalab-ml/ibrahim/limagents_update/sci_lit_synthesis/data_bio_phy_chem/pubmed_oa_full_paper/csv"
-OUT_DIR = "/lstr/sahara/datalab-ml/ibrahim/limagents_update/medlimagents/med_limagents_v2/data"
+IN_DIR = "/lstr/sahara/datalab-ml/limagents_update/sci_lit_synthesis/data_bio_phy_chem/pubmed_oa_full_paper/csv"
+OUT_DIR = "/lstr/sahara/datalab-ml/limagents_update/medlimagents/med_limagents_v2/data"
 
 # ----------------------------------------------------------------------------- patterns
 USER_STOPS = r"acknowledge?ments?|appendix|appendices|ethics|ethical\s+considerations?"
